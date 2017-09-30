@@ -274,14 +274,14 @@ code {
 .logo {
   display: block;
   padding: 10px 0;
-  width: 250px;
-  height: 70px;
+  width: 150px;
+  height: 600px;
   background-image: url("images/cuppar.png");
   background-position: 0px 10px;
   background-repeat: no-repeat;
-  -webkit-background-size: 250px 70px;
-  -moz-background-size: 250px 70px;
-  background-size: 250px 70px;
+  -webkit-background-size: 150px 600px;
+  -moz-background-size: 150px 600px;
+  background-size: 150px 600px;
 }
 .main-body {
   margin-top: -60px;
@@ -378,7 +378,7 @@ code {
 #header-title .subtitle {
   font-size: 16px;
   font-style: italic;
-  line-height: 80px;
+  line-height: 610px;
   color: rgba(255,255,255,0.7);
   text-shadow: 0 1px rgba(0,0,0,0.2);
 }
@@ -1644,11 +1644,11 @@ a.article-title:hover {
   line-height: 22px;
 }
 #footer .logo {
-  width: 200px;
-  height: 56px;
-  -webkit-background-size: 200px 56px;
-  -moz-background-size: 200px 56px;
-  background-size: 200px 56px;
+  width: 120px;
+  height: 480px;
+  -webkit-background-size: 120px 480px;
+  -moz-background-size: 120px 480px;
+  background-size: 120px 480px;
 }
 i.icon {
   display: inline-block;
