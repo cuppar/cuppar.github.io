@@ -209,6 +209,11 @@ td {
 a img {
   border: none;
 }
+img {
+  margin: 15px auto;
+  display: block;
+  width: 90%;
+}
 input,
 button {
   margin: 0;
