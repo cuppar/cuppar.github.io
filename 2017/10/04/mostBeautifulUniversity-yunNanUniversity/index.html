@@ -327,7 +327,7 @@
 
 
 
-    <a data-url="http://cuppar.com/2017/10/04/mostBeautifulUniversity-yunNanUniversity/" data-id="cj8dztge00003m8htfrpbctce" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://cuppar.com/2017/10/04/mostBeautifulUniversity-yunNanUniversity/" data-id="cj8e4yd490000echtfcfkwxyw" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -387,6 +387,47 @@
     })(jQuery);
 </script>
 
+            �Ķ�����:<span id="/2017/10/04/mostBeautifulUniversity-yunNanUniversity/" class="leancloud_visitors" data-flag-title="中国最美大学-云南大学"></span>��
+<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+<script>
+    var APP_ID = '����app id';
+    var APP_KEY = '����app key';
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+    // ��ʾ����
+    function showTime(Counter) {
+        var query = new AV.Query("Counter");
+        if($(".leancloud_visitors").length > 0){
+            var url = $(".leancloud_visitors").attr('id').trim();
+            // where field
+            query.equalTo("words", url);
+            // count
+            query.count().then(function (number) {
+                // There are number instances of MyClass where words equals url.
+                $(document.getElementById(url)).text(number?  number : '--');
+            }, function (error) {
+                // error is an instance of AVError.
+            });
+        }
+    }
+    // ׷��pv
+    function addCount(Counter) {
+        var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
+        var Counter = AV.Object.extend("Counter");
+        var query = new Counter;
+        query.save({
+            words: url
+        }).then(function (object) {
+        })
+    }
+    $(function () {
+        var Counter = AV.Object.extend("Counter");
+        addCount(Counter);
+        showTime(Counter);
+    });
+</script>
         </footer>
     </div>
 </article>
